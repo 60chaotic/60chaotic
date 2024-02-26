@@ -4,5 +4,5 @@ const homeRoutes = require("./home.route");
 module.exports.routesClient = (app) => {
     app.use("/", homeRoutes);
     
-    app.get("/products", productRoutes);
+    app.use("/products", productRoutes);
 }
