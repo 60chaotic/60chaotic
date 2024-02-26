@@ -13,7 +13,7 @@ var session = require('express-session');
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGODB)
+mongoose.connect(process.env.MONGO_URL)
     .then(() => console.log("Connected!!!"));
 
 
