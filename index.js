@@ -9,7 +9,6 @@ var bodyParser = require('body-parser');
 var flash = require('express-flash');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
-const { MongoClient, ServerApiVersion } = require('mongodb');
 
 
 dotenv.config();

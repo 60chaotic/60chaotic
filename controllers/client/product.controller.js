@@ -1,4 +1,3 @@
-const { prefixAdmin } = require("../../config/system");
 const Product = require("../../models/products.model");
 
 // [GET] /products
