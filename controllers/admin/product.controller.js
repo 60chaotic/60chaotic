@@ -228,6 +228,7 @@ module.exports.editPatch = async (req, res) => {
         res.redirect(`back`);
     } catch (error) {
         res.redirect(`/${systemConfig.prefixAdmin}/products`);
+        console.log(error);
     }
     
 }

@@ -9,7 +9,7 @@ const upload = multer({ storage: storageMulter() });
 
 const controller = require("../../controllers/admin/product.controller");
 
-route.get("/", controller.index);
+route.use("/", controller.index);
 
 route.patch("/change-status/:status/:id", controller.changeStatus);
 

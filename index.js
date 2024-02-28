@@ -10,13 +10,10 @@ var flash = require('express-flash');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
-
 dotenv.config();
 
 mongoose.connect(process.env.MONGO_URL)
     .then(() => console.log("Connected!!!"));
-
-
 
 
 const app = express();
